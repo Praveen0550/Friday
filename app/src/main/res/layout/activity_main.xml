@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/boot_back"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+  android:id="@+id/recycler_view"
+    android:layout_weight="1"
+  android:layout_gravity="center"
+    android:layout_above="@+id/bottom_layout"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="300sp"
+        android:gravity="center"
+        android:text="Welcome to Friday! use Trivia keyword to get your trivia Historical questions"
+        android:textColor="#EDF0F3"
+        android:id="@+id/welcome_text"
+        android:layout_gravity="center"
+        android:textSize="28dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_edit_text"
+        android:layout_centerInParent="true"
+        android:hint="How can i help you to day"
+        android:textColor="#123"
+        android:layout_toLeftOf="@+id/send_btn"
+      android:padding="16dp"
+        android:background="@drawable/rounded_corner"/>
+     <ImageButton
+         android:id="@+id/send_btn"
+         android:layout_width="49dp"
+         android:layout_height="49dp"
+       android:layout_alignParentEnd="true"
+       android:layout_centerInParent="true"
+       android:layout_marginStart="10dp"
+         android:padding="8dp"
+         android:src="@drawable/send"
+         android:background="?attr/selectableItemBackgroundBorderless"
+         tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+  </LinearLayout>
